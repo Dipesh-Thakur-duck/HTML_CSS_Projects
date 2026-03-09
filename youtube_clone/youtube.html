@@ -4,7 +4,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>YouTube Clone</title>
+    <link rel="stylesheet" href="general.css">
     <link rel="stylesheet" href="header.css">
+    <link rel="stylesheet" href="sidebar.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
@@ -20,22 +22,59 @@
           <input placeholder="Search" class="search-input">
           <button class="search-button">
             <img src="./youtube-icon/search.svg" class="search-icon">
+            <span class="search-tooltip">Search</span>
           </button>
           <button class="voice-button">
             <img src="./youtube-icon/voice-search-icon.svg" class="voice-icon">
+            <span class="voice-search-tooltip">Voice Search</span>
           </button>
         </div>
         <div class="nav-right">
           <div class="container">
-            <img src="./youtube-icon/upload.svg" alt="youtube-upload">
-            <img src="./youtube-icon/youtube-apps.svg" alt="youtube-apps">
-            <img src="./youtube-icon/notifications.svg" alt="youtube-notification">
-            <img src="../channel-pictures/channel-pic1.jpg" alt="youtube-account">
+            <div class="upload-div">
+              <img src="./youtube-icon/upload.svg" alt="youtube-upload">
+              <span class="create-tooltip">Create</span>
+            </div>
+            <div class="youtube-apps-div">
+              <img src="./youtube-icon/youtube-apps.svg" alt="youtube-apps">
+              <span class="youtube-apps-tooltip">YouTube apps</span>
+            </div>
+            <div class="notification-div">
+              <img src="./youtube-icon/notifications.svg" alt="youtube-notification">
+              <span class="notification-tooltip">Notifications</span>
+              <span class="notification-count">3</span>
+            </div>
+            <img src="./channel-pictures/channel-pic1.jpg" alt="youtube-account" id="account-pic">
           </div>
-        </div>
-        
+        </div> 
       </nav>
     </header>
+    <nav class="sidebar">
+      <div class="sidebar-el1">
+        <img src="./youtube-sidebar-icons/home.svg" alt="home-icon">
+        <span>Home</span>
+      </div>
+      <div class="sidebar-el1">
+        <img src="./youtube-sidebar-icons/explore.svg" alt="explore-icon">
+        <span>Explore</span>
+      </div>
+      <div class="sidebar-el1">
+        <img src="./youtube-sidebar-icons/subscriptions.svg" alt="subscription-icon">
+        <span>Subscriptions</span>
+      </div>
+      <div class="sidebar-el1">
+        <img src="./youtube-sidebar-icons/originals.svg" alt="YouTube-originals-icon">
+        <span>Originals</span>
+      </div>
+      <div class="sidebar-el1">
+        <img src="./youtube-sidebar-icons/youtube-music.svg" alt="YouTube-music-icon">
+        <span>YouTube Music</span>
+      </div>
+      <div class="sidebar-el1">
+        <img src="./youtube-sidebar-icons/library.svg" alt="library-icon">
+        <span>Library</span>
+      </div>
+    </nav>
     
   </body>
 </html>
