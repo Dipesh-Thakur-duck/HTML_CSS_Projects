@@ -5,7 +5,11 @@ let html = "";
 videoInfo.forEach(video=>{
   html += `
     <div class="video-container">
-      <img src="${video.thumbnail}" class="thumbnail-pic">
+      <div class="thumbnail-videolength-container">
+        <img src="${video.thumbnail}" class="thumbnail-pic">
+        <span class="video-length">${video.videoLength}</span>
+      </div>
+      
       <div class="video-info-container">
         <div class="channelpic-channeltooltip-container">
           <img src="${video.channelPic}" class="channel-pic">

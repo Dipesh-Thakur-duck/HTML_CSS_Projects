@@ -1,6 +1,20 @@
 main{
   padding:30px;
 }
+.thumbnail-videolength-container{
+  position:relative;
+}
+.video-length{
+  font-size:13px;
+  font-weight:550;
+  padding:3px 5px;
+  border-radius:2px;
+  position:absolute;
+  background-color:black;
+  color:white;
+  bottom:10px;
+  right:10px;
+}
 .video-container{
   display:flex;
   flex-direction:column;
@@ -68,12 +82,13 @@ main{
 }
 .channelpic-channeltooltip-container{
   position:relative;
+}
+.channel-tooltip-data-container{
   display:flex;
-  flex-direction:column;
+  flex-direction: column;
 }
 .channel-tooltip{
   position:absolute;
-  bottom:-30px;
   pointer-events: none;
   opacity:0;
   transition: opacity 0.3s ease;
@@ -84,6 +99,7 @@ main{
   padding:7px 12px;
   box-shadow:0 0 5px rgb(156, 152, 152);
   border-radius:3px;
+  white-space: nowrap;
 }
 .channelpic-channeltooltip-container:hover .channel-tooltip{
   opacity:1;
