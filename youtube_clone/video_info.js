@@ -1,6 +1,7 @@
 export const videoInfo = [
   {
     thumbnail: "./thumbnails/thumbnail-1.webp",
+    link: "https://youtu.be/G3e-cpL7ofc?si=DHpgJhIluFy5PVSg",
     channelPic:"./channel-pictures/channel-pic1.jpg",
     channelName:"SuperSimpleDev",
     subscribers: "741K subscribers",
@@ -11,6 +12,7 @@ export const videoInfo = [
   },
   {
     thumbnail: "./thumbnails/thumbnail-2.webp",
+    link: "https://youtu.be/2ZJNrHxD4zw?si=DI2alNbrjIksEnRA",
     channelPic:"./channel-pictures/channel-pic2.jpg",
     channelName:"Don't Tell Comedy",
     subscribers:"2.24M subscribers",
@@ -21,16 +23,18 @@ export const videoInfo = [
   },
   {
     thumbnail:"./thumbnails/thumbnail-3.webp",
+    link: "https://www.youtube.com/watch?v=FgjPQQeTh1w",
     channelPic:"./channel-pictures/channel-pic3.jpeg",
     channelName:"SSSniperWolf",
     subscribers:"35.1M subscribers",
-    videoTitle:"Craxy Tik Toks Taken Moments Before DISASTER",
+    videoTitle:"Crazy Tik Toks Taken Moments Before DISASTER",
     views:"12M views",
     time:"1 year ago",
     videoLength:"9:13"
   },
   {
     thumbnail:"./thumbnails/thumbnail-4.webp",
+    link: "https://www.youtube.com/watch?v=094y1Z2wpJg",
     channelPic:"./channel-pictures/channel-pic4.jpeg",
     channelName:"Veritasium",
     subscribers:"19.5M subscribers",
@@ -41,6 +45,7 @@ export const videoInfo = [
   },
   {
     thumbnail: "./thumbnails/thumbnail-5.webp",
+    link: "https://www.youtube.com/watch?v=86CQq3pKSUw",
     channelPic: "./channel-pictures/channel-pic5.jpeg",
     channelName: "CS Dojo",
     subscribers: "1.95M subscribers",
@@ -51,6 +56,7 @@ export const videoInfo = [
   },
   {
     thumbnail: "./thumbnails/thumbnail-6.webp",
+    link: "https://www.youtube.com/watch?v=yXWw0_UfSFg",
     channelPic: "./channel-pictures/channel-pic6.jpeg",
     channelName: "MrBeast",
     subscribers: "451M subscribers",
@@ -61,6 +67,7 @@ export const videoInfo = [
   },
   {
     thumbnail: "./thumbnails/thumbnail-7.webp",
+    link: "https://www.youtube.com/watch?v=fNVa1qMbF9Y",
     channelPic: "./channel-pictures/channel-pic7.jpeg",
     channelName: "RealLifeLore",
     subscribers: "7.88M subscribers",
@@ -71,6 +78,7 @@ export const videoInfo = [
   },
   {
     thumbnail: "./thumbnails/thumbnail-8.webp",
+    link: "https://www.youtube.com/watch?v=lFm4EM1juls",
     channelPic: "./channel-pictures/channel-pic8.jpeg",
     channelName: "Tech Vision",
     subscribers: "845K subscribers",
@@ -81,6 +89,7 @@ export const videoInfo = [
   },
   {
     thumbnail: "./thumbnails/thumbnail-9.webp",
+    link: "https://www.youtube.com/watch?v=ixmxOlcrlUc",
     channelPic: "./channel-pictures/channel-pic9.jpeg",
     channelName: "ThenX",
     subscribers: "7.83M subscribers",
@@ -91,6 +100,7 @@ export const videoInfo = [
   },
   {
     thumbnail: "./thumbnails/thumbnail-10.webp",
+    link: "https://www.youtube.com/watch?v=R2vXbFp5C9o",
     channelPic: "./channel-pictures/channel-pic10.jpeg",
     channelName: "Business Insider",
     subscribers: "10.3M subscribers",
@@ -101,6 +111,7 @@ export const videoInfo = [
   },
   {
     thumbnail: "./thumbnails/thumbnail-11.webp",
+    link: "https://www.youtube.com/watch?v=0nZuYyXET3s",
     channelPic: "./channel-pictures/channel-pic11.jpeg",
     channelName: "Destination Tipes",
     subscribers: "282K subscribers",
@@ -111,6 +122,7 @@ export const videoInfo = [
   },
   {
     thumbnail: "./thumbnails/thumbnail-12.webp",
+    link: "https://www.youtube.com/watch?v=9iMGFqMmUFs",
     channelPic: "./channel-pictures/channel-pic12.jpeg",
     channelName: "TED-Ed",
     subscribers: "22.2M subscribers",
@@ -119,5 +131,4 @@ export const videoInfo = [
     time: "5 year ago",
     videoLength: "4:51"
   }
-
-]
+];

@@ -6,7 +6,9 @@ videoInfo.forEach(video=>{
   html += `
     <div class="video-container">
       <div class="thumbnail-videolength-container">
-        <img src="${video.thumbnail}" class="thumbnail-pic">
+        <a href="${video.link}">
+          <img src="${video.thumbnail}" class="thumbnail-pic">
+        </a>
         <span class="video-length">${video.videoLength}</span>
       </div>
       
@@ -25,7 +27,10 @@ videoInfo.forEach(video=>{
         </div>
         
         <div class="video-info">
-          <p class="video-title">${video.videoTitle}</p>
+          <a href="${video.link}">
+            <p class="video-title">${video.videoTitle}</p>
+          </a>
+          
           <div class="video-stats">
             <p class="channel-name">${video.channelName}</p>
             <div class="stats">
