@@ -2,6 +2,8 @@
   display:flex;
   align-items:center;
   justify-content: space-between;
+  width:90%;
+  max-width:1200px;
 }
 .logo-design-container{
   width:150px;
@@ -11,9 +13,12 @@
 }
 .beta-badge{
   margin-bottom:-7px;
+  padding:0.4em 0.7em;
+  border-radius:0.4em;
   align-self:flex-end;
-  background-color:rgb(255, 102, 0);
+  background-color:rgb(255, 166, 0);
   color:white;
+  transition:padding 0.3s ease, border-radius 0.3s ease, font-size 0.3s ease;
 }
 .logo{
   width:100px;
@@ -31,15 +36,51 @@
   color:white;
   border:2px solid rgb(79, 138, 214);
 }
-@media (max-width:1152px){
-  .beta-badge{
-    padding:3px 5px;
-    font-size:12px;
-    border-radius:3px;
+.login-button,.register-button{
+  padding:0.86em 1.79em;
+  border-radius:0.5em;
+  transition:padding 0.3s ease, border-radius 0.3s ease, font-size 0.3s ease;
+}
+@media (min-width: 1152.02px){
+  .logo-design-container{
+    font-size:13px;
   }
-  .login-button,.register-button{
+  .beta-badge{
+    margin-right:-6px;
+  }
+  .nav-menu{
+    font-size:16px;
+  }
+}
+@media (max-width:1152px){
+  .logo-design-container{
+    font-size:12px;
+  }
+  .nav-menu{
     font-size:14px;
-    padding:12px 25px;
-    border-radius:7px;
+  }
+}
+@media (max-width:816px){
+  .logo-design-container{
+    font-size:10px;
+  }
+  .nav-menu{
+    font-size:12px;
+  }
+}
+@media (max-width: 688px){
+  .logo-design-container{
+    font-size:9px;
+  }
+  .nav-menu{
+    font-size:11px;
+  }
+}
+@media (max-width: 545px){
+  .logo-design-container{
+    font-size:8px;
+  }
+  .nav-menu{
+    font-size:9px;
   }
 }
