@@ -25,7 +25,7 @@
 }
 .nav-menu{
   display:flex;
-  gap:15px
+  gap:1rem;
 }
 .login-button{
   color:rgb(79, 138, 214);
@@ -37,9 +37,26 @@
   border:2px solid rgb(79, 138, 214);
 }
 .login-button,.register-button{
+  display:inline-block;
   padding:0.86em 1.79em;
   border-radius:0.5em;
-  transition:padding 0.3s ease, border-radius 0.3s ease, font-size 0.3s ease;
+  transition:box-shadow 0.3s ease, transform 0.5s;
+}
+.login-button:hover, .register-button:hover{
+  box-shadow: 0 3px 5px rgb(73, 73, 73);
+  transform: scale(1.05, 1.05);
+  animation: blur-moment 0.6s ease;
+}
+@keyframes blur-moment{
+  0%{
+    filter:blur(0);
+  }
+  50%{
+    filter: blur(0.6px);
+  }
+  100%{
+    filter:blur(0);
+  }
 }
 @media (min-width: 1152.02px){
   .logo-design-container{
