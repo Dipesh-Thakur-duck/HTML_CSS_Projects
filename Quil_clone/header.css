@@ -16,7 +16,7 @@
   padding:0.4em 0.7em;
   border-radius:0.4em;
   align-self:flex-end;
-  background-color:rgb(255, 166, 0);
+  background-color:rgb(255, 115, 0);
   color:white;
   transition:padding 0.3s ease, border-radius 0.3s ease, font-size 0.3s ease;
 }
@@ -28,13 +28,13 @@
   gap:1rem;
 }
 .login-button{
-  color:rgb(79, 138, 214);
-  border:2px solid rgb(79, 138, 214);
+  color:var(--btn-color);
+  border:2px solid var(--btn-color);
 }
 .register-button{
-  background-color:rgb(79, 138, 214);
+  background-color:var(--btn-color);
   color:white;
-  border:2px solid rgb(79, 138, 214);
+  border:2px solid var(--btn-color);
 }
 .login-button,.register-button{
   display:inline-block;

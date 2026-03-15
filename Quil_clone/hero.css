@@ -1,0 +1,70 @@
+.hero{
+  display:flex;
+  flex-direction:column;
+}
+.main-banner{
+  text-align:center;
+  align-self:center;
+  font-weight:700;
+}
+.mindful-living{
+  background-color:rgb(126, 85, 240);
+  color:white;
+  border-radius:4px;
+  padding:1px 7px;
+}
+.hero-nav{
+  align-self:center;
+}
+.sub-text{
+  color:rgba(0, 0, 0, 0.76);
+  text-align:center;
+}
+@media (min-width: 1152.02px){
+  .main-banner{
+    width:700px;
+    font-size:4rem;
+  }
+  .sub-text{
+    font-size:1.2rem;
+    margin-bottom:35px;
+  }
+}
+@media (max-width:1152px){
+  .main-banner{
+    width:675px;
+    font-size:3.4rem;
+  }
+  .sub-text{
+    font-size:1.15rem;
+    margin-bottom:35px;
+  }
+}
+@media (max-width:816px){
+  .main-banner{
+    width:80vw;
+    font-size:3rem;
+  }
+  .sub-text{
+    font-size:1rem;
+  }
+  
+}
+@media (max-width: 688px){
+  .main-banner{
+    width:80vw;
+    font-size:2.5rem;
+  }
+  .sub-text{
+    font-size:0.9rem;
+  }
+}
+@media (max-width: 545px){
+  .main-banner{
+    width:80vw;
+    font-size:2.1rem;
+  }
+  .sub-text{
+    font-size:0.8rem;
+  }
+}
