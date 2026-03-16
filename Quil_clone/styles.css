@@ -1,0 +1,37 @@
+.quill-benefit-content{
+  font-weight:700;
+  text-align:center;
+}
+.quill-benefit-tag{
+  padding-left:0.2em;
+  padding-right:0.2em;
+  border-radius:0.1em;
+  background-color:rgb(255, 115, 0);
+  color:white;
+}
+@media (min-width: 1152.02px){
+  .quill-benefit-content{
+    font-size:2.8rem;
+    width:1036px;
+  }
+}
+@media (max-width:1152px){
+  .quill-benefit-content{
+    font-size:2.6rem;
+  }
+}
+@media (max-width:816px){
+  .quill-benefit-content{
+    font-size:2.3rem;
+  }
+}
+@media (max-width: 688px){
+  .quill-benefit-content{
+    font-size:2rem;
+  }
+}
+@media (max-width: 545px){
+  .quill-benefit-content{
+    font-size:1.6rem;
+  }
+}
