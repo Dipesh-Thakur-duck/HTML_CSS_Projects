@@ -8,7 +8,7 @@
   font-weight:700;
 }
 .mindful-living{
-  background-color:rgb(126, 85, 240);
+  background-color:var(--purple-color);
   color:white;
   border-radius:4px;
   padding:1px 7px;

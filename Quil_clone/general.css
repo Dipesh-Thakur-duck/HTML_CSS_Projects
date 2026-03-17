@@ -21,4 +21,6 @@ ul{
 }
 :root{
   --btn-color:#1c7ed6;
+  --purple-color:rgb(126, 85, 240);
+  --text-color:rgb(73, 73, 73);
 }
