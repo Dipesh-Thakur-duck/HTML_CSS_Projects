@@ -1,0 +1,221 @@
+:root{
+  --background-color:#faf9ff;
+  --paragraph-color:#4c5e86;
+  --orange-color:#ff6b00;
+  --blue-background:#d9e2ff;
+  --light-blue-paragraph-color:#4c5e86;
+  --blue-paragraph-color:#041a3f;
+  --dark-orange:#a04100;
+  --light-orange-bg:rgba(160, 65, 0, 0.2);
+  --light-yellow-paragraph:#735c00;
+}
+body{
+  font-family: 'Plus Jakarta Sans', sans-serif;
+  background-color:var(--background-color);
+}
+.join-button{
+  background-color:var(--orange-color); 
+  color:white;
+  font-weight:700;
+  text-decoration: none;
+  display:block;
+}
+.navbar-brand{
+  font-weight:700;
+  font-size:1.4rem
+}
+.nav-li{
+  font-weight: 700;
+  color:var(--paragraph-color);
+}
+main{
+  padding-top:80px;
+}
+.hero{
+  margin-top:150px;
+  min-height: calc(100vh - 80px - 150px);
+  display: flex;
+  align-items: stretch;
+}
+.hero-badge{
+  background-color:var(--blue-background);
+  color: var(--blue-paragraph-color);
+  letter-spacing:1.5px;
+}
+.hero-title{
+  font-weight:700;
+}
+.hero-description{
+  color:var(--paragraph-color);
+  font-size:1.2rem;
+}
+.hero-btn{
+  border:none;
+  font-size:1.3rem;
+  font-weight:700;
+  padding:20px;
+}
+.get-counseling-btn{
+  background-color: var(--orange-color);
+  color:white;
+}
+.find-best-collg-btn{
+  color:var(--blue-paragraph-color);
+  background-color: var(--blue-background);
+}
+.hero-stdnt{
+  width:40px;
+  height:40px;
+  border-radius:50%;
+  border:2px solid white;
+  margin:-7px;
+}
+.hero-stdnt-p{
+  margin-left: 25px;
+  color:var(--blue-paragraph-color);
+  font-size:0.9rem;
+  font-weight:600;
+
+}
+.hero-stdnt-p-inner{
+  font-size:0.9rem;
+  font-weight:600;
+  color:var(--paragraph-color)
+}
+.hero-banner-image{
+  border-radius:50px;
+  border:15px solid white;
+  box-shadow:0 4px 50px rgba(255, 107, 0, 0.2);
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.banner-img-badge{
+  background-color:var(--background-color);
+  border-radius:10px;
+  bottom:40px;
+  left:40px;
+  padding:20px;
+}
+.banner-image-badge-icon{
+  color:var(--dark-orange);
+  background-color:var(--light-orange-bg);
+  align-self: flex-start;
+  padding:8px;
+  border-radius:50%;
+}
+.banner-image-badgetext{
+  color:var(--light-blue-paragraph-color);
+  font-size:0.75rem;
+  font-weight:700;
+  margin-bottom:5px;
+}
+.banner-image-stat{
+  margin-bottom:5px;
+  font-size:1.2rem;
+  color:var(--blue-paragraph-color);
+  font-weight:700;
+}
+.cta{
+  padding:30px;
+  border-radius:45px;
+  background-color:white;
+}
+.cta-container{
+  background-color:var(--blue-background);
+  padding-top:100px;
+  padding-bottom:100px;
+}
+.cta-title{
+  color:var(--blue-paragraph-color);
+  font-weight:700;
+}
+.cta-title-span{
+  color:var(--light-yellow-paragraph);
+}
+.cta-description{
+  color:var(--paragraph-color);
+  font-size:1.2rem;
+}
+.cta-icon-container{
+  display:flex;
+  flex-direction: column;
+  gap:20px;
+}
+.cta-icon-div{
+  display:flex;
+  gap:20px;
+}
+.cta-icon{
+  color:var(--dark-orange);
+}
+.cta-icon-name{
+  color:var(--blue-paragraph-color);
+  font-weight:700;
+}
+.cta-form-btn{
+  background-color:var(--orange-color);
+  border:none;
+  font-size:1.3rem;
+  font-weight:700;
+  padding:20px;
+  border-radius:20px;
+}
+.cta-select:focus,.cta-input:focus{
+  border:2px solid var(--dark-orange);
+  box-shadow:none;
+}
+.cta-select, .cta-input{
+  background-color:var(--blue-background);
+  padding:20px;
+  border-radius:10px;
+}
+.value-prop-flex{
+  display:flex;
+  gap: 100px;
+}
+.value-proposition-container{
+  background-color:var(--background-color);
+}
+.value-prop-tag{
+  color:var(--dark-orange);
+  font-weight:700;
+}
+.value-prop-title{
+  font-weight:700;
+}
+.value-prop{
+  display:flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap:20px;
+  padding:20px;
+  border-radius:20px;
+}
+.value-prop:hover{
+  border-bottom: 3px solid var(--dark-orange);
+}
+.value-prop-icon-container{
+  padding:20px;
+  background-color:var(--light-orange-bg);
+  border-radius:15px;
+  transition:transform 0.3s ease;
+}
+.value-prop-icon{
+  color:var(--dark-orange) !important;
+}
+.value-prop:hover .value-prop-icon-container{
+  transform: scale(1.1);
+}
+.value-prop-description{
+  color:var(--paragraph-color);
+}
+.value-prop-a{
+  text-decoration: none;
+  font-weight:700;
+}
+.small{
+  font-size:0.8rem;
+}
+
+
