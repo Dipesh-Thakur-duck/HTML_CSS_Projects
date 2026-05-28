@@ -1,0 +1,149 @@
+:root{
+  --font-weight-700:700;
+  --body-bg-color:#faf9ff;
+  --light-blue-color:#4c5e86;
+  --dark-blue-color:#041a3f;
+  --superlight-blue-color:#f1f3ff;
+  --dark-orange:#a04100;
+  --orange-color:#ff6b00;
+}
+body{
+  font-family: 'Plus Jakarta Sans', sans-serif;
+  background-color:var(--body-bg-color);
+  padding-top:60px;
+}
+/* Navigation bar CSS */
+.navbar{
+  background-color:white;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+.navbar-brand{
+  font-weight:var(--font-weight-700);
+  font-size:1.4rem;
+}
+.nav-link{
+  color:var(--light-blue-color);
+  font-size:0.9rem;
+  font-weight:var(--font-weight-700);
+}
+.nav-link:hover{
+  color:var(--dark-orange);
+}
+.nav-join-btn{
+  background-color:var(--orange-color);
+  font-size:1rem;
+  padding:10px 20px;
+  text-decoration: none;
+}
+/*main content*/
+.main-container{
+  margin-top:150px;
+  margin-bottom:130px;
+}
+.page-indicator .navbar-nav{
+  flex-direction:row;
+  align-items:center;
+}
+.page-indicator li{
+  font-size:0.9rem;
+}
+.the-arrow{
+  font-size:0.8rem;
+}
+.hero-title{
+  font-weight:800;
+  color:var(--dark-blue-color);
+}
+.hero-description{
+  color:var(--light-blue-color);
+  font-size:1.2rem;
+  line-height:2.2rem;
+}
+.verified-icon-hero{
+  color:var(--dark-orange) !important;
+}
+.hero-badge div{
+  color:#6a544b;
+  background-color:var(--superlight-blue-color);
+}
+/*Featured Institutions Section*/
+.matching-criteria-statement div{
+  color:var(--light-blue-color);
+}
+.featured-institutions-btns span{
+  color:var(--dark-orange);
+}
+.featured-institutions-btns button:hover{
+  background-color:var(--superlight-blue-color);
+}
+.featured-institutions{
+  display:flex;
+  gap:20px;
+}
+.card-img-top{
+  transition: transform 0.3s ease;
+}
+.card-title{
+  font-weight:var(--font-weight-700);
+}
+.card-location span{
+  font-size:0.9rem;
+}
+.card-location{
+  color:var(--light-blue-color);
+  font-size:0.9rem;
+}
+.label{
+  font-size:0.75rem;
+  font-weight:500;
+  color:var(--light-blue-color);
+  background-color:var(--superlight-blue-color);
+  padding:3px 10px;
+}
+.view-details-btn{
+  font-weight:600;
+  text-decoration: none;
+  color:black;
+  font-size:0.9rem;
+  border:1px solid grey;
+}
+.view-details-btn:hover{
+  background-color:var(--superlight-blue-color);
+}
+.apply-now-btn{
+  color:white;
+  background-color:var(--orange-color);
+  text-decoration:none;
+  font-weight:600;
+  text-decoration: none;
+  font-size: 0.9rem;
+}
+.apply-now-btn:hover{
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);;
+}
+.affiliation-badge{
+  color:var(--dark-orange);
+  font-size:0.75rem;
+  font-weight:var(--font-weight-700);
+  background-color:antiquewhite;
+  position:absolute;
+  padding:5px 10px;
+  border-radius:25px;
+  left:10px;
+  top:15px;
+}
+.card{
+  transition: transform 0.3s ease;
+  border:none;
+}
+.card:hover{
+  transform:scale(1.02);
+}
+.card:hover .card-img-top{
+  transform: scale(1.05);
+}
+.card-img-top-div{
+  overflow:hidden; /*you need a child element to stop the overflow*/
+  border-top-left-radius: 25px;
+  border-top-right-radius: 25px;
+}
