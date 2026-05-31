@@ -1,11 +1,15 @@
 :root{
   --font-weight-700:700;
   --body-bg-color:#faf9ff;
-  --light-blue-color:#4c5e86;
-  --dark-blue-color:#041a3f;
+  --light-blue-color:rgb(76, 94, 134);
+  --light-blue-color-rgb:76, 94, 134;
+  --dark-blue-color:rgb(4, 26, 63);
+  --dark-blue-color-rgb:4, 26, 63;
   --superlight-blue-color:#f1f3ff;
   --dark-orange:#a04100;
-  --orange-color:#ff6b00;
+  --orange-color:rgb(255, 107, 0);
+  --orange-color-rgb:255, 107, 0;
+  --orange-color-rgb: 255, 120, 50;
 }
 body{
   font-family: 'Plus Jakarta Sans', sans-serif;
@@ -67,6 +71,9 @@ body{
   background-color:var(--superlight-blue-color);
 }
 /*Featured Institutions Section*/
+.featured-institutions{
+  margin-bottom:30px;
+}
 .matching-criteria-statement div{
   color:var(--light-blue-color);
 }
@@ -76,12 +83,22 @@ body{
 .featured-institutions-btns button:hover{
   background-color:var(--superlight-blue-color);
 }
-.featured-institutions{
-  display:flex;
-  gap:20px;
+.card{
+  max-width: 400px;
+  transition: transform 0.3s ease;
+  border:none;
+  border-radius:25px;
 }
+.card-img-top-div{
+  height: 300px;
+  overflow:hidden; /*you need a child element to stop the overflow*/
+  border-top-right-radius:25px; 
+  border-top-left-radius: 25px;
+}
+
 .card-img-top{
   transition: transform 0.3s ease;
+  width: 100%;
 }
 .card-title{
   font-weight:var(--font-weight-700);
@@ -132,18 +149,140 @@ body{
   left:10px;
   top:15px;
 }
-.card{
-  transition: transform 0.3s ease;
-  border:none;
-}
 .card:hover{
   transform:scale(1.02);
 }
 .card:hover .card-img-top{
   transform: scale(1.05);
 }
-.card-img-top-div{
-  overflow:hidden; /*you need a child element to stop the overflow*/
+.map-div{
+  position:relative;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  border-radius:30px;
+  overflow:hidden;
+}
+.nepal-map{
+  width:100%;
+  height:350px;
+}
+.map-text{
+  position:absolute;
+}
+.map-btn{
+  display:flex;
+  justify-content:center;
+  gap:5px;
+  color:var(--dark-blue-color);
+  font-weight:600;
+}
+/*CTA Section*/
+.cta-container{
+  background-color:var(--superlight-blue-color);
+}
+.cta-div {
+  background-color: var(--dark-blue-color);
+  background-image: radial-gradient(
+    circle at 12% 20%,
+    rgba(var(--orange-color-rgb), 0.18) 0%,
+    transparent 45%
+  );
+  border-radius: 25px;
+}
+.cta-col1-p1{
+  font-size:50px;
+  color:white;
+  font-weight:var(--font-weight-700);
+}
+.cta-col1-p2{
+  color:var(--light-blue-color);
+  font-size:1.2rem;
+}
+.counseling-btn{
+  background-color: var(--orange-color);
+  color:white;
+  font-size:1.1rem;
+  font-weight: var(--font-weight-700);
+  border: none;
+}
+.counseling-btn.counseling-btn:hover{
+  box-shadow: 0 4px 20px rgba(var(--orange-color-rgb), 0.6);
+}
+.cta-col2{
+  background-color:rgba(var(--light-blue-color-rgb),0.3);
+  border:1px solid var(--light-blue-color);
+  border-radius:10px;
+}
+.mentor-profile{
+  display:flex;
+  flex-direction:column;
+  gap:20px;
+  width:100%;
+  max-width:350px;
+}
+.mentor-profile-pic{
+  background-color:#ffe088;
+  font-weight:var(--font-weight-700);
+  width:50px;
+  height:50px;
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  border-radius:50px;
+}
+.mentor-name{
+  font-weight:var(--font-weight-700);
+  color:white;
+  font-size:1.4rem;
+}
+.mentor-quality{
+  font-size:0.9rem;
+  color:var(--light-blue-color);
+}
+.hr-thickner{
+  background-color:rgba(var(--light-blue-color-rgb),0.5);
+  width:8px;
+  height: 8px;
+  border-radius:20px;
+}
+.online-now{
+  color:var(--dark-orange);
+  font-weight: 600;
+  font-size:0.9rem;
+}
+.online-now-circle{
+  width:30px;
+  height:30px;
+  border-radius:35px;
+  border:2px solid white;
+  margin-left:-10px;
+}
+/*footer*/
+footer{
+  background-color:var(--dark-blue-color);
   border-top-left-radius: 25px;
   border-top-right-radius: 25px;
+}
+.footer-row1{
+  border-bottom: 1px solid rgba(33,37,41,0.9);
+}
+.quick-links, .resources-footer{
+  gap:20px;
+}
+.footer-input-field{
+  background-color: rgba(33,37,41,0.9); 
+  border:none;
+  border-top-left-radius: 10px; 
+  border-bottom-left-radius: 10px;
+  outline: none;
+  box-shadow: none;
+  caret-color: white;
+  padding:5px;
+}
+.footer-send-btn{
+  background-color:#a04100; 
+  border:none; 
+  border-top-right-radius: 10px; 
+  border-bottom-right-radius: 10px;
 }

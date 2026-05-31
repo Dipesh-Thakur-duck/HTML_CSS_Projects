@@ -177,10 +177,6 @@ main{
   padding:20px;
   border-radius:10px;
 }
-.value-prop-flex{
-  display:flex;
-  gap: 100px;
-}
 .value-proposition-container{
   background-color:var(--background-color);
 }
@@ -414,10 +410,6 @@ main{
 }
 .career-insights-container{
   background-color:var(--light-blue-background);
-}
-.career-insights-cards{
-  display:flex;
-  gap:20px;
 }
 .card-career-insights{
   border-radius:40px;
