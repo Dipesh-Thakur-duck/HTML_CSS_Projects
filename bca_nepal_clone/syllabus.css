@@ -1,0 +1,72 @@
+:root{
+  --font-weight-700:700;
+  --dark-orange-color:#a04100;
+  --orange-color:rgb(255, 107, 0);
+  --body-bg-color:#faf9ff;
+  --super-light-blue-color:#d9e2ff;
+  --dark-blue-color:rgb(4, 26, 63);
+  --light-blue-color:rgb(76, 94, 134);
+}
+body{
+  padding-top:70px;
+  background-color:var(--body-bg-color);
+  font-family: 'Plus Jakarta Sans', sans-serif !important;
+}
+/*Navbar CSS*/
+nav{
+  font-family: 'Plus Jakarta Sans', sans-serif;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+.logo{
+  font-weight:var(--font-weight-700);
+  font-size:1.4rem;
+  text-decoration: none;
+  color:black;
+}
+.navbar-li{
+  font-weight:var(--font-weight-700);
+  font-size:0.9rem;
+}
+.navbar-li a:hover{
+  color:#a04100
+}
+.join-btn{
+  background-color:var(--orange-color);
+  color:white;
+  border:none;
+  font-weight:var(--font-weight-700);
+  text-decoration:none;
+}
+/*hero section*/
+.academic-bdg{
+  background-color:var(--super-light-blue-color);
+  color:var(--dark-blue-color) !important;
+  padding:10px 15px !important;
+}
+.hero-title{
+  font-weight:700 !important;
+  color:var(--dark-blue-color);
+}
+.hero-description{
+  color:var(--light-blue-color) !important;
+  font-size:1.3rem;
+  line-height: 2rem;
+}
+.hero-btn-1{
+  background-color:var(--orange-color);
+  border:none;
+  border-radius:50px;
+  font-weight:600;
+}
+.hero-btn-2{
+  color:var(--dark-orange-color);
+  background-color:var(--super-light-blue-color);
+  border:none;
+  border-radius:30px;
+  font-weight:600;
+}
+.hero-image{
+  border-radius:20px;
+  width:100%;
+  height:auto;
+}
