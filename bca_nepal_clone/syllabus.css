@@ -159,8 +159,12 @@ nav{
   background-color:rgba(248, 249, 250, 0.1);
   color:white;
   font-weight:var(--font-weight-700);
-  padding:30px 40px;
-  border-radius:50%;
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  width:100px;
+  height:100px;
+  border-radius:100%;
 }
 .uni-syllabus-end-focus{
   color:rgba(248, 249, 250, 0.4);
