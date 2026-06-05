@@ -1,0 +1,202 @@
+:root{
+  --background-color:#faf9ff;
+  --font-weight-700:700;
+  --dark-blue-color:#041a3f;
+  --light-blue-para:#4c5e86;
+  --super-light-blue:#d9e2ff;
+  --orange-color:#ff6b00;
+  --dark-orange:#a04100;
+  --light-blue-bg:#b4c6f4;
+  --light-purple-color:#5a415a;
+}
+body{
+  font-family: 'Plus Jakarta Sans', sans-serif;
+  background-color: var(--background-color);
+  padding-top:220px;
+}
+/*NavBar CSS*/
+.navbar{
+  box-shadow:0 4px 6px rgba(0, 0, 0, 0.1);
+}
+.brand-logo{
+  font-weight:700;
+  text-decoration: none;
+  color:black;
+  font-size:1.4rem;
+}
+.header-li{
+  color:var(--light-blue-para);
+  font-weight:var(--font-weight-700);
+  font-size:0.9rem;
+}
+.header-join-btn{
+  display:flex;
+  text-decoration:none;
+  justify-content: center;
+  color:white;
+  background-color:var(--orange-color);
+  border:none;
+  font-weight:var(--font-weight-700);
+}
+/*hero section*/
+.hero-badge{
+  color:var(--light-blue-para);
+  background-color:var(--light-blue-bg);
+  width:fit-content;
+}
+.hero-badge-text{
+  font-weight:var(--font-weight-700);
+  font-size:1.1rem;
+  letter-spacing: 2px;
+}
+.hero-title{
+  color:var(--dark-blue-color);
+  font-weight:var(--font-weight-700);
+}
+.hero-description{
+  color: var(--light-purple-color);
+  font-size:1.3rem;
+}
+@media (min-width:768px) and (max-width:991.98px) {
+  .hero-description{
+    width:600px;
+  }
+}
+.hero-dwn-btn{
+  color:white;
+  background-color:var(--orange-color);
+  display:flex;
+  align-items:center;
+  justify-content: center;
+  gap:5px;
+  border:none;
+  font-weight:var(--font-weight-700);
+  font-size:1.2rem;
+}
+.hero-view-btn{
+  background-color:var(--super-light-blue);
+  color:var(--dark-blue-color);
+  font-weight:700;
+  font-size:1.2rem;
+  border:none;
+}
+.img-wrapper{
+  position:relative;
+}
+.img-halo{
+  position:absolute;
+  z-index:-1;
+  width:300px;
+  height:300px;
+  border-radius:50%;
+  background-color: var(--dark-orange);
+  top:-100px;
+  left:-100px;
+  filter:blur(100px);
+}
+.hero-img{
+  transition:transform 0.3s ease;
+}
+.hero-img:hover{
+  transform:rotate(2deg);
+}
+/*about bca section */
+.about-bca{
+  background-color:var(--super-light-blue);
+}
+.about-bca-title{
+  color:var(--dark-blue-color);
+  font-weight:var(--font-weight-700);
+}
+.about-bca-description{
+  color:var(--light-purple-color);
+  font-size:1.2rem;
+}
+.about-bca-card-icons{
+  color:var(--dark-orange);
+  background-color:rgba(160, 65, 0, 0.1);
+  align-self: flex-start;
+}
+.about-bca-card-icons1{
+  color:var(--dark-orange);
+  font-size:2rem;
+  font-weight:var(--font-weight-700);
+}
+.about-bca-card-title{
+  color:var(--dark-blue-color);
+  font-weight:var(--font-weight-700);
+}
+.about-bca-card-description{
+  color:var(--light-purple-color);
+  font-size:0.9rem;
+}
+.about-bca-card-description1{
+  color:var(--light-purple-color);
+  font-size:1rem;
+}
+.about-bca-course-card-container{
+  display:grid; 
+  grid-template-columns: 1fr 1fr; 
+  gap:15px;
+}
+/*bca scope section */
+.bca-scope-title{
+  color:var(--dark-blue-color);
+  font-weight: var(--font-weight-700);
+  font-size:2rem;
+  text-align:center;
+}
+.bca-scope-description{
+  color:var(--light-purple-color);
+  font-size:1rem;
+  text-align:center;
+
+}
+.bca-scope-table{
+  width:100%;
+}
+.bca-scope-table-head{
+  background-color:var(--dark-blue-color);
+  color:white;
+  font-weight:var(--font-weight-700);
+}
+.bca-scope-table-head th{
+  padding:20px;
+}
+.bca-scope-role{
+  color:var(--dark-blue-color);
+  font-weight: var(--font-weight-700);
+}
+.bca-scope-task{
+  color:var(--light-purple-color);
+}
+.bca-scope-table{
+  box-shadow:0 0 40px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  overflow: hidden;
+}
+.bca-scope-table td{
+  padding:20px;
+}
+.bca-scope-table tr:not(:last-child){
+  border-bottom: 1px solid var(--light-blue-bg);
+}
+.bca-scope-table tbody tr:hover{
+  background-color:var(--super-light-blue);
+}
+.bca-scope-entry-level{
+  color:var(--dark-orange);
+  font-weight:var(--font-weight-700);
+}
+.bca-scope-senior{
+  color:var(--dark-blue-color);
+  font-weight: var(--font-weight-700);
+}
+.bca-demand-badge{
+  color:black;
+  font-weight:var(--font-weight-700);
+  background-color:#ffe088;
+  width:fit-content;
+  padding:5px 15px;
+  border-radius:20px;
+}
