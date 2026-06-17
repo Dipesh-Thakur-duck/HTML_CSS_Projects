@@ -6,6 +6,7 @@
   --super-light-blue:#d9e2ff;
   --orange-color:#ff6b00;
   --dark-orange:#a04100;
+  --dark-orange-p:rgb(90, 65, 54);
   --light-blue-bg:#b4c6f4;
   --light-purple-color:#5a415a;
 }
@@ -13,6 +14,33 @@ body{
   font-family: 'Plus Jakarta Sans', sans-serif;
   background-color: var(--background-color);
   padding-top:220px;
+}
+
+/* Mobile Responsive - Navbar adjustments */
+@media (max-width: 767px) {
+  body{
+    padding-top: 120px;
+  }
+  .navbar{
+    padding: 0.5rem 0;
+  }
+  .brand-logo{
+    font-size: 1.1rem;
+  }
+  .header-li{
+    font-size: 0.85rem;
+  }
+  .header-join-btn{
+    font-size: 0.85rem;
+    padding: 0.5rem 1rem !important;
+  }
+}
+
+/* Tablet adjustments */
+@media (min-width: 768px) and (max-width: 991.98px) {
+  body{
+    padding-top: 180px;
+  }
 }
 /*NavBar CSS*/
 .navbar{
@@ -57,9 +85,41 @@ body{
   color: var(--light-purple-color);
   font-size:1.3rem;
 }
+
+/* Mobile Responsive - Hero section */
+@media (max-width: 767px) {
+  .hero-badge-text{
+    font-size: 0.9rem;
+    letter-spacing: 1px;
+  }
+  .hero-title{
+    font-size: 1.75rem !important;
+  }
+  .hero-description{
+    font-size: 1rem;
+  }
+  .hero-dwn-btn,
+  .hero-view-btn{
+    font-size: 0.95rem;
+    padding: 0.75rem 1.5rem !important;
+  }
+  .hero-dwn-btn span{
+    font-size: 1rem;
+  }
+  .d-flex.gap-3:has(> .hero-dwn-btn) {
+    flex-direction: column;
+    gap: 1rem !important;
+  }
+}
+
 @media (min-width:768px) and (max-width:991.98px) {
   .hero-description{
     width:600px;
+  }
+}
+@media (max-width: 767px) {
+  .hero-description{
+    width: auto;
   }
 }
 .hero-dwn-btn{
@@ -100,6 +160,21 @@ body{
 .hero-img:hover{
   transform:rotate(2deg);
 }
+
+/* Mobile Responsive - Hero image */
+@media (max-width: 767px) {
+  .img-halo{
+    width: 180px;
+    height: 180px;
+    top: -60px;
+    left: -60px;
+    filter: blur(80px);
+  }
+  .hero-img{
+    max-width: 100%;
+    height: auto;
+  }
+}
 /*about bca section */
 .about-bca{
   background-color:var(--super-light-blue);
@@ -139,6 +214,19 @@ body{
   grid-template-columns: 1fr 1fr; 
   gap:15px;
 }
+
+/* Mobile Responsive - Course cards */
+@media (max-width: 767px) {
+  .about-bca-course-card-container{
+    grid-template-columns: 1fr;
+  }
+  .about-bca-title{
+    font-size: 1.5rem;
+  }
+  .about-bca-description{
+    font-size: 1rem;
+  }
+}
 /*bca scope section */
 .bca-scope-title{
   color:var(--dark-blue-color);
@@ -151,6 +239,16 @@ body{
   font-size:1rem;
   text-align:center;
 
+}
+
+/* Mobile Responsive - Scope section */
+@media (max-width: 767px) {
+  .bca-scope-title{
+    font-size: 1.5rem;
+  }
+  .bca-scope-description{
+    font-size: 0.95rem;
+  }
 }
 .bca-scope-table{
   width:100%;
@@ -169,6 +267,13 @@ body{
 }
 .bca-scope-task{
   color:var(--light-purple-color);
+}
+
+/* Table wrapper for horizontal scroll on mobile */
+.bca-scope-table-wrapper{
+  width: 100%;
+  overflow-x: auto;
+  border-radius: 8px;
 }
 .bca-scope-table{
   box-shadow:0 0 40px rgba(0, 0, 0, 0.1);
@@ -199,4 +304,143 @@ body{
   width:fit-content;
   padding:5px 15px;
   border-radius:20px;
+}
+@media (max-width: 576px) {
+  .bca-demand-badge {
+    padding: 3px 7px;
+    font-size: 0.8rem;
+  }
+  .bca-scope-table-head th, .bca-scope-table td {
+    padding: 10px;
+    font-size: 0.85rem;
+  }
+  .bca-scope-table-head th {
+    padding: 12px 8px;
+  }
+  .bca-scope-table td {
+    padding: 12px 8px;
+  }
+  .bca-scope-role{
+    font-size: 0.9rem;
+  }
+  .bca-scope-task{
+    font-size: 0.8rem;
+  }
+  .bca-scope-entry-level,
+  .bca-scope-senior{
+    font-size: 0.85rem;
+  }
+}
+/*BCA Comparison Section*/
+.bca-comparison{
+  background-color:var(--super-light-blue);
+}
+.bca-comparison-title{
+  color:var(--dark-blue-color);
+  font-size:2.2rem;
+  font-weight: var(--font-weight-700);
+}
+.bca-comparison-subtitle{
+  color:var(--dark-orange-p);
+}
+.bca-comparison-card{
+  background-color:white;
+  position:relative;
+  overflow: hidden;
+}
+.bca-comparison-card:hover{
+  box-shadow:0px 0px 2px rgba(90, 65, 54, 0.3);
+}
+.bca-comparison-card:hover hr{
+  color:rgba(90, 65, 54, 0.3);
+}
+.bca-comparison-card-title{
+  color:var(--dark-blue-color);
+  font-size:1.4rem;
+  font-weight: var(--font-weight-700);
+}
+.bca-comparison-card-description{
+  color:var(--dark-orange-p);
+  font-size:0.9rem;
+}
+.bca-comparison-card-check{
+  color:green;
+  font-size:0.9rem;
+}
+.bca-comparison-card-pros{
+  color:var(--dark-blue-color);
+  font-size:0.85rem;
+}
+.bca-comparison-card-goodfor{
+  color:var(--dark-orange);
+  font-weight:var(--font-weight-700);
+  letter-spacing: 2px;
+}
+.bca-comparison hr{
+  color:#e9edff;
+}
+
+/* Mobile Responsive - Comparison section */
+@media (max-width: 767px) {
+  .bca-comparison-title{
+    font-size: 1.5rem;
+  }
+  .bca-comparison-subtitle{
+    font-size: 0.95rem;
+    margin-bottom: 1.5rem !important;
+  }
+  .d-flex.flex-column.flex-md-row.gap-4{
+    flex-direction: column !important;
+  }
+  .bca-comparison-card{
+    padding: 1.5rem !important;
+  }
+  .bca-comparison-card-title{
+    font-size: 1.1rem;
+  }
+  .bca-comparison-card-description{
+    font-size: 0.85rem;
+  }
+  .bca-comparison-card-pros{
+    font-size: 0.8rem;
+  }
+}
+.bca-comparison-tag{
+  color:white;
+  background-color:var(--dark-orange);
+  width:fit-content;
+  font-size:0.7rem;
+  font-weight: var(--font-weight-700);
+  padding:2px 15px;
+  position:absolute;
+  right:0;
+  top:0;
+}
+/*Leading Uni Affiliations Section*/
+.leading-uni-title{
+  text-align: center;
+  font-size:2rem;
+  font-weight:var(--font-weight-700);
+  color:var(--dark-blue-color);
+}
+.leading-uni-card{
+  border:1px solid rgb(216, 216, 216);
+  border-radius:25px;
+}
+.leading-uni-card:hover{
+  box-shadow:0px 2px 3px rgba(0, 0, 0, 0.1);
+}
+.leading-uni-short-name{
+  color:var(--dark-orange);
+  font-weight:var(--font-weight-700);
+  font-size:1.5rem;
+  width:70px;
+  height:70px;
+  background-color: var(--super-light-blue);
+  border-radius:50%;
+}
+.leading-uni-full-name{
+  color:var(--dark-blue-color);
+  font-weight:600;
+  text-align:center
 }
