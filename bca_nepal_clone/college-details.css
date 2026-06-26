@@ -11,7 +11,7 @@
 }
 body{
   font-family:'Plus Jakarta Sans', sans-serif;
-  background-color:var(--background-color);
+  background-color:var(--background-color) !important;
   padding-top:130px;
 }
 /*navbar*/
@@ -43,6 +43,7 @@ body{
 }
 .hero-logo{
   width:140px;
+  height:140px;
   border:20px solid white;
   border-radius:20px;
 }
@@ -66,9 +67,28 @@ body{
 .hero-data{
   display:none;
 }
+@media(max-width:992px){
+  .hero-logo{
+    border-width:10px;
+  }
+}
 @media(min-width:992px){
   .hero-data{
     display:flex;
+  }
+}
+@media (max-width:576px){
+  .hero-logo{
+    width:100px;
+    height:100px;
+    border-width:5px;
+    border-radius:10px;
+  }
+  .hero-title{
+    font-size:2rem;
+  }
+  .hero-badge{
+    font-size:0.8rem;
   }
 }
 .hero-info{
@@ -132,4 +152,117 @@ body{
   margin-bottom: 10px;
   color:var(--light-purple-text);
 }
-
+/*facilities div*/
+.facilities span{
+  color:var(--dark-orange-color);
+  font-size:2.5rem;
+}
+.facilities{
+  color:var(--dark-blue-color);
+  font-weight: var(--font-weight-600);
+}
+/*success stories div*/
+.success-stories{
+  background-color:rgba(217, 226, 255, 0.3);
+  border-left: 4px solid var(--gutter-yellow);
+  position:relative;
+}
+.success-stories-msg{
+  color:var(--light-purple-text);
+  font-style: italic;
+  font-size:1rem;
+}
+.success-stories-img{
+  width:45px;
+  height:45px;
+  object-fit: cover;
+  border-radius:50%;
+}
+.success-stories-name{
+  color:var(--dark-blue-color);
+  font-weight:var(--font-weight-600);
+}
+.success-stories-info{
+  color:var(--dark-orange-color);
+  font-size:0.8rem;
+  font-weight:var(--font-weight-600);
+}
+.success-stories-quote{
+  color:rgba(4, 26, 63, 0.05);
+  position:absolute;
+  right:10px;
+  top:30px;
+}
+/*admission process part*/
+.admission-process-num{
+  flex-shrink: 0;
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  width:50px;
+  height: 50px;
+  border-radius:15px;
+  background-color:var(--dark-orange-color);
+  color:white;
+  font-size:1.5rem;
+  font-weight: var(--font-weight-600);
+  box-shadow:0 10px 10px rgba(160, 65, 0, 0.3);
+}
+.admission-process-type{
+  font-size:1.3rem;
+  color:var(--dark-blue-color);
+  font-weight: var(--font-weight-600);
+}
+.admission-process-info{
+  color:var(--light-purple-text);
+}
+@media (max-width:576px){
+  .admission-process-num{
+    font-size:1rem;
+    height:30px;
+    width:30px;
+    border-radius:8px;
+  }
+  .admission-process-type{
+    font-size:1rem;
+  }
+  .admission-process-info{
+    font-size:0.8rem;
+  }
+}
+/*college gallery*/
+.gallery-img-wrapper{
+  box-shadow:0 10px 20px rgba(4, 26, 63, 0.05);
+}
+.gallery-img-wrapper:hover{
+  box-shadow:0 10px 20px rgba(160, 65, 0, 0.2);
+}
+.gallery-img{
+  transition:transform 0.3s ease;
+  width:100%;
+  height:100%;
+}
+.gallery-img:hover{
+  transform:scale(1.1);
+}
+.college-video-btn{
+  text-decoration: none;
+  font-size:1.2rem;
+  background-color:var(--orange-color);
+  color:white;
+  width:fit-content;
+  align-self: center;
+  font-weight:var(--font-weight-700);
+}
+.college-video-btn:hover{
+  box-shadow:0 10px 20px rgba(160, 65, 0, 0.2);
+}
+/*location div*/
+.location-title{
+  color:var(--dark-blue-color);
+  font-weight:var(--font-weight-600);
+}
+.location-data{
+  color:var(--light-purple-text);
+  font-weight:300;
+}
