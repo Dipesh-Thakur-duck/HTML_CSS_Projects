@@ -266,3 +266,117 @@ body{
   color:var(--light-purple-text);
   font-weight:300;
 }
+/*form*/
+.form-container{
+  background: radial-gradient(circle, rgba(255, 80, 80, 0.15) 0%, transparent 70%);
+  background-size: 300px 300px;
+  background-position: -30px -120px;
+  background-repeat: no-repeat;
+}
+.form-title{
+  color:var(--dark-blue-color);
+  font-weight:var(--font-weight-600);
+  font-size:1.7rem;
+}
+.form-label{
+  color:var(--gutter-yellow);
+  font-size:0.9rem;
+  font-weight: 500;
+}
+.form-control{
+  background-color: var(--light-blue-bg) !important;
+  border:none !important;
+  font-weight: 350 !important;
+  color:var(--light-purple-text) !important;
+  padding:10px 15px !important;
+  border-radius:10px !important;
+}
+.form-submit-btn{
+  width:100%;
+  border:none;
+  background-color:var(--orange-color);
+  color:white;
+  font-weight: var(--font-weight-700);
+  font-size:1.1rem;
+}
+.form-submit-btn:hover{
+  box-shadow:0 10px 20px rgba(160, 65, 0, 0.2);
+}
+.download-btn{
+  background-color:var(--light-purple-text);
+  color:white;
+  font-weight:var(--font-weight-700);
+  border:none;
+}
+.whatsapp-btn{
+  color:white;
+  background-color:#25D366;
+  font-weight: var(--font-weight-600);
+  border:none;
+}
+.whatsapp-btn svg{
+  width:25px;
+}
+.verified-badge{
+  background-color: var(--light-blue-bg);
+  font-size:0.8rem;
+  color:#5a4136;
+}
+.verified-badge span{
+  color:var(--gutter-yellow);
+  font-size:2rem;
+}
+.sticky-col{
+  position:sticky;
+  top:65px;
+}
+/*footer*/
+footer{
+  background-color:var(--dark-blue-color);
+}
+.footer-row1{
+  border-bottom: 1px solid rgba(33, 37, 41, 1);
+}
+.footer-bg-title{
+  color:white;
+  font-size:1.3rem;
+  font-weight: var(--font-weight-700);
+}
+.footer-text{
+  color:rgba(255, 255, 255, 0.5);
+  font-size:0.9rem;
+  font-weight:350;
+}
+.footer-sm-title{
+  color:white;
+  font-weight: var(--font-weight-700);
+}
+.footer-links{
+  list-style: none;
+  padding-left:0 !important;
+  margin-left:0 !important;
+}
+.footer-links a{
+  text-decoration: none;
+  color:rgba(255, 255, 255, 0.5) !important;
+  font-size:0.9rem;
+  font-weight:350;
+}
+.footer-input{
+  background-color:rgba(33, 37, 41, 1);
+  border:none;
+  width:75%;
+  caret-color: white;
+}
+.footer-input:focus{
+  outline:none;
+  box-shadow: none;
+}
+.footer-form-btn{
+  background-color: var(--dark-orange-color);
+  color:white;
+  border:none;
+}
+.footer-counseling{
+  color:var(--dark-orange-color);
+}
