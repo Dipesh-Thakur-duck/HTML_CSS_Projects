@@ -69,3 +69,124 @@ main{
     right:-20px;
   }
 }
+/* main block other divs*/
+.quick-links{
+  top: 100px;
+  height: fit-content; /*required because or else it will stretch to the end of parent div*/
+  
+}
+.quick-links-title{
+  font-size:1.3rem;
+  font-weight: var(--font-weight-700);
+  color:var(--dark-blue-color);
+}
+@media(max-width:991.98px){
+  .quick-links{
+    display:none;
+  }
+}
+ul{
+  padding-left:4rem !important;
+}
+.main-title{
+  color:var(--dark-blue-color);
+  font-size:1.4rem;
+  font-weight:var(--font-weight-600);
+}
+.main-p{
+  line-height: 1.8rem;
+}
+.cfa-container{
+  background:linear-gradient(135deg, #a04100 0%, #ff6b00 100%);;
+}
+.cfa-title{
+  color:white;
+  font-weight:var(--font-weight-700);
+}
+.cfa-p{
+  color:white;
+}
+.cfa-btn{
+  font-weight: var(--font-weight-600);
+  width:fit-content;
+}
+/*Career Insights Card*/
+.career-insights-card-title{
+  font-weight:var(--font-weight-700);
+  color:var(--dark-blue-color);
+  border-top:1px solid #dee2e6;
+}
+.card{
+  border:none !important;
+}
+.card-img-top{
+  border-top-left-radius: 20px !important;
+  border-top-right-radius: 20px !important;
+  height:50%;
+  object-fit: cover;
+}
+@media(max-width:576px){
+  .card-img-top{
+    height:auto;
+  }
+}
+.card-badge{
+  color:var(--dark-blue-color);
+  font-weight: var(--font-weight-600);
+  font-size:0.8rem;
+}
+.card-title{
+  color:var(--dark-blue-color) !important;
+  font-weight: var(--font-weight-700);
+  font-size:1.2rem;
+}
+.card-text{
+  color:var(--dark-blue-color) !important;
+  font-size:1rem;
+}
+.card-btn{
+  font-size:0.9rem;
+  font-weight: var(--font-weight-700);
+}
+/*footer*/
+footer{
+  background-color:var(--dark-blue-color);
+}
+.row1{
+  border-bottom: 1px solid rgb(33 37 41);
+}
+.footer-bg-title{
+  font-weight:var(--font-weight-700);
+  font-size:1.3rem;
+}
+.footer-sm-title{
+  font-weight: var(--font-weight-700);
+}
+.footer-text{
+  font-size:0.9rem;
+  color:rgba(255, 255, 255, 0.5);
+}
+.footer-links{
+  padding-left:0 !important;
+  list-style: none;
+}
+.footer-links a{
+  text-decoration: none;
+  color:rgba(255, 255, 255, 0.5);
+  font-size:0.9rem;
+}
+.footer-input{
+  width:75%;
+  background-color: rgb(33 37 41);
+  border:none;
+  caret-color: white;
+  outline: none;
+}
+.footer-form-btn{
+  margin-left:-1px;
+  border:none;
+  background-color:rgb(13 110 253);
+}
+.footer-form-btn a{
+  color:white;
+}
